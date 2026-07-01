@@ -1,0 +1,343 @@
+﻿#add_task_btn {
+    background-color: var(--color-primary);
+    color: var(--color-button-text);
+    font-weight: bolder;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: var(--shadow-button);
+}
+
+.task-title {
+    color: var(--color-text);
+    font-weight: 700;
+}
+
+.task-chip {
+    display: inline-block;
+    padding: 5px 9px;
+    border-radius: 6px;
+    background: var(--color-page-bg);
+    color: var(--color-text-muted);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.priority-pill {
+    display: inline-block;
+    padding: 5px 9px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.priority-pill.low {
+    background: var(--color-page-bg);
+    color: var(--color-text-muted);
+}
+
+.priority-pill.medium {
+    background: var(--color-priority-medium-bg);
+    color: var(--color-priority-medium-text);
+}
+
+.priority-pill.high {
+    background: var(--color-priority-high-bg);
+    color: var(--color-priority-high-text);
+}
+
+.priority-pill.critical {
+    background: var(--color-priority-critical-bg);
+    color: var(--color-priority-critical-text);
+}
+
+.assignee-cell,
+.assignee-card {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.assignee-cell {
+    justify-content: center;
+}
+
+.assignee-card {
+    justify-content: flex-start;
+    margin-top: 12px;
+    align-items: flex-start;
+}
+
+.assignee-cell p,
+.assignee-card h3 {
+    color: var(--color-text-strong);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.assignee-cell small,
+.assignee-card p {
+    color: var(--color-text-muted);
+    font-size: 11px;
+}
+
+.avatar-dot {
+    width: 28px;
+    height: 28px;
+    flex: 0 0 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--color-status-active-bg);
+    color: var(--color-primary);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.avatar-dot.large {
+    width: 44px;
+    height: 44px;
+    flex-basis: 44px;
+    font-size: 16px;
+}
+
+.task-modal-box {
+    max-width: 560px;
+}
+
+.modal-subtitle {
+    color: var(--color-text-muted);
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.task-title-input,
+.task-desc-input,
+.task-project-input,
+.task-team-input,
+.task-user-input,
+.task-date-input,
+.task-priority-input,
+.task-status-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-field-border);
+    border-radius: 8px;
+    background-color: var(--color-field-bg);
+    outline: none;
+}
+
+.task-desc-input {
+    height: 92px;
+    resize: none;
+}
+
+.task-detail-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.task-description-card h2,
+.task-comments-card h2 {
+    color: var(--color-text);
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.task-description-card p {
+    color: var(--color-text-muted);
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.task-comments-card {
+    margin-top: 24px;
+}
+
+.comment-item {
+    display: flex;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.comment-item:last-child {
+    border-bottom: none;
+}
+
+.comment-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.comment-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 7px;
+}
+
+.comment-item strong {
+    color: var(--color-text);
+    font-size: 13px;
+}
+
+.comment-item span {
+    color: var(--color-primary);
+    background: var(--color-status-active-bg);
+    border-radius: 999px;
+    padding: 3px 8px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.comment-item small {
+    color: var(--color-text-subtle);
+    font-size: 12px;
+}
+
+.comment-item p {
+    color: var(--color-text-muted);
+    margin-top: 8px;
+    line-height: 1.6;
+    font-size: 13px;
+}
+
+.task-assignee-panel .stat-label {
+    margin-bottom: 10px;
+}
+
+.assignee-info {
+    display: grid;
+    gap: 5px;
+}
+
+.task-assignee-name {
+    color: var(--color-text-strong);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.task-assignee-detail {
+    color: var(--color-text-muted);
+    font-size: 12px;
+    line-height: 1.35;
+    margin: 0;
+}
+
+.comment-form {
+    margin-top: 18px;
+    display: grid;
+    gap: 8px;
+}
+
+.comment-form label {
+    color: var(--color-label);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.comment-form textarea {
+    width: 100%;
+    min-height: 86px;
+    padding: 10px;
+    border: 1px solid var(--color-field-border);
+    border-radius: 8px;
+    background: var(--color-field-bg);
+    resize: vertical;
+    outline: none;
+}
+
+.comment-form button {
+    justify-self: end;
+}
+
+@media (max-width: 900px) {
+    .task-table {
+        min-width: 1050px;
+    }
+}
+
+@media (max-width: 600px) {
+    #add_task_btn {
+        width: 100%;
+        margin-right: 0 !important;
+        text-align: center;
+    }
+}
+
+/* Task details side panel polish */
+.side-stack > .card {
+    padding: 28px 30px;
+}
+
+.side-stack .stat-group {
+    margin-bottom: 24px;
+}
+
+.side-stack .stat-group:last-child {
+    margin-bottom: 0;
+}
+
+.side-stack .stat-label {
+    display: block;
+    margin-bottom: 9px;
+    color: var(--color-text-subtle);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.side-stack .stat-value {
+    color: var(--color-text-strong);
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.25;
+}
+
+.side-stack .statusColor,
+.side-stack .priority-pill {
+    min-width: 96px;
+    padding: 9px 17px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.member-status-editor {
+    padding: 20px 0 8px;
+    border-top: 1px solid var(--color-border-soft);
+    border-bottom: 1px solid var(--color-border-soft);
+}
+
+.member-status-editor .task-status-input {
+    height: 48px;
+    margin-bottom: 12px;
+    padding: 0 14px;
+    border: 1px solid var(--color-field-border);
+    border-radius: 9px;
+    background-color: var(--color-field-bg);
+    color: var(--color-text);
+    font-size: 15px;
+    outline: none;
+}
+
+.member-status-editor .task-status-input:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(19, 88, 236, 0.12);
+}
+
+.member-status-editor .btn-create {
+    width: 155px;
+    min-height: 44px;
+    border-radius: 9px;
+    font-size: 15px;
+    box-shadow: var(--shadow-button);
+}

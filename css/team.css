@@ -1,0 +1,535 @@
+﻿#add_team_btn,
+#add_team_member_btn,
+.secondary-btn {
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#add_team_btn,
+#add_team_member_btn {
+    background: var(--color-primary);
+    color: var(--color-button-text);
+    border: none;
+    box-shadow: var(--shadow-button);
+}
+
+.secondary-btn {
+    background: var(--color-surface);
+    color: var(--color-text-muted);
+    border: 1px solid var(--color-border);
+}
+
+.team-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.team-grid {
+    width: 92%;
+    margin: 0 4% 18px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.team-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    box-shadow: var(--shadow-subtle);
+    padding: 18px;
+}
+
+.team-card-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    border-bottom: 1px solid var(--color-border-soft);
+    padding-bottom: 14px;
+    margin-bottom: 14px;
+}
+
+.team-card-actions {
+    display: grid;
+    justify-items: end;
+    gap: 8px;
+}
+
+.team-delete-btn {
+    border: none;
+    background: var(--color-primary);
+    color: var(--color-button-text);
+    border-radius: 7px;
+    padding: 10px 16px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: var(--shadow-button);
+    min-width: 78px;
+}
+
+.member-delete-btn {
+    border: none;
+    background: transparent;
+    color: #ff0022;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.icon-delete-btn {
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    box-shadow: none;
+}
+
+.icon-delete-btn svg {
+    pointer-events: none;
+}
+
+.team-card-header h2 {
+    color: var(--color-text);
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.team-card-header h2 a,
+.member-link,
+.assignment-row {
+    color: inherit;
+}
+
+.team-card-header p,
+.team-card-header span {
+    color: var(--color-text-muted);
+    font-size: 12px;
+}
+
+.team-card-header span {
+    white-space: nowrap;
+    font-weight: 700;
+}
+
+.team-member-stack {
+    display: grid;
+    gap: 10px;
+}
+
+.team-member-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.team-avatar {
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--color-status-active-bg);
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.team-member-row strong {
+    color: var(--color-text-strong);
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+.team-member-row p {
+    color: var(--color-text-muted);
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.team-member-row,
+.assignment-row,
+.member-link {
+    text-decoration: none;
+}
+
+.empty-team-card {
+    color: var(--color-text-muted);
+    font-weight: 600;
+}
+
+.team-directory {
+    margin-top: 18px;
+}
+
+.team-modal-box {
+    max-width: 560px;
+}
+
+.team-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-field-border);
+    border-radius: 8px;
+    background: var(--color-field-bg);
+    outline: none;
+}
+
+.team-textarea {
+    height: 88px;
+    resize: none;
+}
+
+.member-picker {
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    max-height: 190px;
+    overflow-y: auto;
+    background: var(--color-surface);
+}
+
+.member-picker label {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5px 10px;
+    padding: 10px;
+    border-bottom: 1px solid var(--color-border-soft);
+    cursor: pointer;
+}
+
+.member-picker label:last-child {
+    border-bottom: none;
+}
+
+.member-picker input {
+    grid-row: span 2;
+    margin-top: 2px;
+}
+
+.member-picker span {
+    color: var(--color-text);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.member-picker small {
+    color: var(--color-text-muted);
+    font-size: 12px;
+}
+
+.project-assignment-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    padding: 0 4%;
+    margin-top: 24px;
+}
+
+.project-task-grid {
+    grid-template-columns: 1fr;
+}
+
+.assignment-card-header h2 {
+    color: var(--color-text);
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.assignment-card-header p {
+    color: var(--color-text-muted);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.assignment-control {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 10px;
+    margin: 18px 0;
+}
+
+.assignment-list {
+    display: grid;
+    gap: 10px;
+}
+
+.assignment-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    color: inherit;
+}
+
+.assignment-row strong {
+    color: var(--color-text-strong);
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+.assignment-row p {
+    color: var(--color-text-muted);
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.member-management-row {
+    justify-content: space-between;
+}
+
+.member-management-main {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+}
+
+.team-directory td:first-child,
+.task-assignee-name {
+    text-transform: capitalize;
+}
+
+.remove-member-btn {
+    flex: 0 0 auto;
+    border: none;
+    background: var(--color-error-bg);
+    color: var(--color-error);
+    border-radius: 6px;
+    padding: 7px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.section-title {
+    color: var(--color-text);
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.team-detail-block {
+    margin-top: 24px;
+}
+
+@media (max-width: 900px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-assignment-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .team-grid,
+    .project-assignment-grid,
+    .team-directory {
+        width: auto;
+        margin-left: 16px;
+        margin-right: 16px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .team-actions {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .assignment-control {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Members Directory table fix */
+.team-directory {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.team-directory table {
+    min-width: 1180px;
+    table-layout: fixed;
+}
+
+.team-directory thead td,
+.team-directory tbody td {
+    padding: 24px 34px;
+    text-align: left;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.team-directory thead td:nth-child(1),
+.team-directory tbody td:nth-child(1) { width: 18%; }
+.team-directory thead td:nth-child(2),
+.team-directory tbody td:nth-child(2) { width: 15%; }
+.team-directory thead td:nth-child(3),
+.team-directory tbody td:nth-child(3) { width: 25%; }
+.team-directory thead td:nth-child(4),
+.team-directory tbody td:nth-child(4) { width: 19%; }
+.team-directory thead td:nth-child(5),
+.team-directory tbody td:nth-child(5) { width: 15%; }
+.team-directory thead td:nth-child(6),
+.team-directory tbody td:nth-child(6) {
+    width: 8%;
+    text-align: center;
+}
+
+.team-directory .directory-cell {
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.team-directory .member-link.directory-cell {
+    color: inherit;
+    text-decoration: none;
+}
+
+.team-directory .icon-delete-btn {
+    margin: 0 auto;
+}
+
+
+/* Members Directory final spacing */
+.team-directory {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.team-directory table {
+    min-width: 1260px;
+    table-layout: fixed;
+}
+
+.team-directory thead td {
+    padding: 22px 30px;
+    text-align: left;
+    vertical-align: middle;
+    overflow: visible;
+    text-overflow: clip;
+    white-space: nowrap;
+    color: var(--color-text-muted);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.team-directory tbody td {
+    padding: 22px 30px;
+    text-align: left;
+    vertical-align: middle;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.team-directory thead td:nth-child(1),
+.team-directory tbody td:nth-child(1) { width: 18%; }
+.team-directory thead td:nth-child(2),
+.team-directory tbody td:nth-child(2) { width: 16%; }
+.team-directory thead td:nth-child(3),
+.team-directory tbody td:nth-child(3) { width: 26%; }
+.team-directory thead td:nth-child(4),
+.team-directory tbody td:nth-child(4) { width: 18%; }
+.team-directory thead td:nth-child(5),
+.team-directory tbody td:nth-child(5) { width: 14%; }
+.team-directory thead td:nth-child(6),
+.team-directory tbody td:nth-child(6) {
+    width: 8%;
+    text-align: center;
+}
+
+.team-directory .directory-cell {
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.team-directory .member-link.directory-cell {
+    color: inherit;
+    text-decoration: none;
+}
+
+.team-directory .icon-delete-btn {
+    margin: 0 auto;
+}
+
+/* Members Directory balanced project-list style */
+.team-directory table {
+    width: 100%;
+    min-width: 0;
+    table-layout: fixed;
+}
+
+.team-directory thead td {
+    padding: 0 14px;
+    text-align: center;
+    vertical-align: middle;
+    overflow: visible;
+    text-overflow: clip;
+    white-space: nowrap;
+    color: var(--color-text-muted);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.team-directory tbody td {
+    padding: 0 14px;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.team-directory thead td:nth-child(1),
+.team-directory tbody td:nth-child(1) { width: 16%; }
+.team-directory thead td:nth-child(2),
+.team-directory tbody td:nth-child(2) { width: 16%; }
+.team-directory thead td:nth-child(3),
+.team-directory tbody td:nth-child(3) { width: 24%; }
+.team-directory thead td:nth-child(4),
+.team-directory tbody td:nth-child(4) { width: 20%; }
+.team-directory thead td:nth-child(5),
+.team-directory tbody td:nth-child(5) { width: 16%; }
+.team-directory thead td:nth-child(6),
+.team-directory tbody td:nth-child(6) { width: 8%; }
+
+.team-directory .directory-cell {
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.team-directory td:first-child .directory-cell,
+.team-directory td:first-child strong {
+    color: var(--color-text);
+    font-weight: 700;
+}
+
+.team-directory .member-link.directory-cell {
+    color: inherit;
+    text-decoration: none;
+}
+
+.team-directory .icon-delete-btn {
+    margin: 0 auto;
+}
+
+/* Members Directory equal header weight */
+.team-directory thead td {
+    font-weight: 700;
+}
